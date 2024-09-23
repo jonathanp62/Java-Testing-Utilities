@@ -28,6 +28,7 @@
  * The testing utilities package. Provide classes
  * useful for use in unit test classes.
  *
+ * @version 0.2.0
  * @since   0.2.0
  */
 package net.jmp.util.testing.testutil;

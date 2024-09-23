@@ -1,11 +1,8 @@
 package net.jmp.util.testing.testutil;
 
 /*
+ * (#)TestUtils.java    0.2.0   09/23/2024
  * (#)TestUtils.java    0.1.0   09/23/2024
- *
- * @author   Jonathan Parker
- * @version  0.1.0
- * @since    0.1.0
  *
  * MIT License
  *
@@ -35,6 +32,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * The class containing static testing utilities.
+ *
+ * @version 0.2.0
+ * @since   0.1.0
+ */
 public final class TestUtils {
     /**
      * The default constructor.
