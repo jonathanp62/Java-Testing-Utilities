@@ -1,0 +1,7 @@
+Testing-Utilities
+-----------------
+
+A library that contains utility classes useful for unit test classes.
+
+Current version: 0.1.0.
+~~~~~~~~~~~~~~~~~~~~~~~
