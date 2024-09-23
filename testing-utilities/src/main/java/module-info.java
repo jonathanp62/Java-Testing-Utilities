@@ -29,7 +29,7 @@
  *
  * @since   0.2.0
  */
-module testing_utilities_lib.main {
+module testing_utilities.main {
     requires java.base;
 
     exports net.jmp.util.testing.testutil;

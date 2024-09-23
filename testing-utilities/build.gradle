@@ -50,7 +50,6 @@ apply plugin : 'java-library'
 
 ext {
     macosArchitecture = System.getProperty('macosArchitecture')
-    artifactName = 'testing-utilities'
 }
 
 println "The macOS architecture is ${macosArchitecture}"
@@ -81,7 +80,7 @@ version = '0.2.0'
 description = 'Testing-Utilities'
 
 println "The groupId is ${project.group}"
-println "The artifactId is ${artifactName}"
+println "The artifactId is ${project.name}"
 println "The version is ${project.version}"
 
 java.sourceCompatibility = JavaVersion.VERSION_23
@@ -111,7 +110,7 @@ test {
 
 tasks.named('jar') {
     manifest {
-        attributes('Implementation-Title': artifactName,
+        attributes('Implementation-Title': project.name,
                 'Implementation-Version': project.version)
     }
 }

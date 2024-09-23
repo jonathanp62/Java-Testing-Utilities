@@ -39,4 +39,4 @@ plugins {
 
 rootProject.name = 'testing-utilities'
 
-include('lib')
+include('testing-utilities')
