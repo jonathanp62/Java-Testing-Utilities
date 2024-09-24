@@ -4,9 +4,10 @@
  * The settings file is used to specify which projects to include in your build.
  * For more detailed information on multi-project builds, please refer to https://docs.gradle.org/8.10.1/userguide/multi_project_builds.html in the Gradle documentation.
  *
+ * (#)settings.gradle   1.0.0   09/24/2024
  * (#)settings.gradle   0.1.0   09/23/2024
  *
- * @version  0.1.0
+ * @version  1.0.0
  * @since    0.1.0
  *
  * MIT License

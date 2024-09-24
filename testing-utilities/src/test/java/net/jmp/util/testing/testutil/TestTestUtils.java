@@ -1,6 +1,7 @@
 package net.jmp.util.testing.testutil;
 
 /*
+ * (#)TestTestUtils.java    1.0.0   09/24/2024
  * (#)TestTestUtils.java    0.2.0   09/23/2024
  * (#)TestTestUtils.java    0.1.0   09/23/2024
  *
@@ -38,12 +39,10 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * The test class for TestUtils.
- *
- * @version 0.2.0
- * @since   0.1.0
- */
+/// The test class for TestUtils.
+///
+/// @version    1.0.0
+/// @since      0.1.0
 public final class TestTestUtils {
     @Test
     public void testCastToType() {

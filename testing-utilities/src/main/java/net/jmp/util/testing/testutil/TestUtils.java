@@ -1,6 +1,7 @@
 package net.jmp.util.testing.testutil;
 
 /*
+ * (#)TestUtils.java    1.0.0   09/24/2024
  * (#)TestUtils.java    0.2.0   09/23/2024
  * (#)TestUtils.java    0.1.0   09/23/2024
  *
@@ -32,28 +33,22 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * The class containing static testing utilities.
- *
- * @version 0.2.0
- * @since   0.1.0
- */
+/// The class containing static testing utilities.
+///
+/// @version    1.0.0
+/// @since      0.1.0
 public final class TestUtils {
-    /**
-     * The default constructor.
-     */
+     /// The default constructor.
     private TestUtils() {
         super();
     }
 
-    /**
-     * Cast object to an instance of type T.
-     *
-     * @param   <T>     The type of instance to cast to
-     * @param   t       The class of type T
-     * @param   object  java.lang.Object
-     * @return          T
-     */
+    /// Cast object to an instance of type T.
+    ///
+    /// @param  <T>     The type of instance to cast to
+    /// @param  t       The class of type T
+    /// @param  object  java.lang.Object
+    /// @return         T
     public static <T> T castToType(final Class<T> t, final Object object) {
         Objects.requireNonNull(t, () -> "Class<T> t is null");
         Objects.requireNonNull(object, () -> "Object object is null");
@@ -61,15 +56,13 @@ public final class TestUtils {
         return t.cast(object);
     }
 
-    /**
-     * Create a list of elements of type T from
-     * a stream of wildcard-typed objects.
-     *
-     * @param   <T>     The type of element in the list
-     * @param   stream  java.util.stream.Stream<?>
-     * @param   clazz   The class of type T
-     * @return          java.util.List<T>
-     */
+    /// Create a list of elements of type T from
+    /// a stream of wildcard-typed objects.
+    ///
+    /// @param  <T>     The type of element in the list
+    /// @param  stream  java.util.stream.Stream<?>
+    /// @param  clazz   The class of type T
+    /// @return         java.util.List<T>
     public static <T> List<T> streamToTypedList(final Stream<?> stream, final Class<T> clazz) {
         Objects.requireNonNull(stream, () -> "Stream<?> stream is null");
         Objects.requireNonNull(clazz, () -> "Class<T> clazz");
@@ -80,15 +73,13 @@ public final class TestUtils {
                 .toList();
     }
 
-    /**
-     * Create a list of elements of type T from
-     * a List of wildcard-typed objects.
-     *
-     * @param   <T>         The type of element in the list
-     * @param   list        java.util.List<?>
-     * @param   clazz       The class of type T
-     * @return              java.util.List<T>
-     */
+    /// Create a list of elements of type T from
+    /// a List of wildcard-typed objects.
+    ///
+    /// @param  <T>     The type of element in the list
+    /// @param  list    java.util.List<?>
+    /// @param  clazz   The class of type T
+    /// @return         java.util.List<T>
     public static <T> List<T> listToTypedList(final List<?> list, final Class<T> clazz) {
         Objects.requireNonNull(list, () -> "List<?> list is null");
         Objects.requireNonNull(clazz, () -> "Class<T> clazz");
@@ -100,15 +91,13 @@ public final class TestUtils {
                 .toList();
     }
 
-    /**
-     * Create a deque of elements of type T from
-     * a Deque of wildcard-typed objects.
-     *
-     * @param   <T>         The type of element in the deque
-     * @param   deque       java.util.Deque<?>
-     * @param   clazz       The class of type T
-     * @return              java.util.Deque<T>
-     */
+    /// Create a deque of elements of type T from
+    /// a Deque of wildcard-typed objects.
+    ///
+    /// @param  <T>     The type of element in the deque
+    /// @param  deque   java.util.Deque<?>
+    /// @param  clazz   The class of type T
+    /// @return         java.util.Deque<T>
     public static <T> Deque<T> dequeToTypedDeque(final Deque<?> deque, final Class<T> clazz) {
         Objects.requireNonNull(deque, () -> "Deque<?> deque is null");
         Objects.requireNonNull(clazz, () -> "Class<T> clazz");
@@ -122,17 +111,15 @@ public final class TestUtils {
         return typedDeque;
     }
 
-    /**
-     * Create a map of elements of types K and V
-     * from a Map of wildcard-typed objects.
-     *
-     * @param   <K>         The type of key element in the map
-     * @param   <V>         The type of value element in the map
-     * @param   map         java.util.Map<?, ?>
-     * @param   keyClazz    The class of key type K
-     * @param   valueClazz  The class of value type V
-     * @return              java.util.Map<K, V>
-     */
+    /// Create a map of elements of types K and V
+    /// from a Map of wildcard-typed objects.
+    ///
+    /// @param  <K>         The type of key element in the map
+    /// @param  <V>         The type of value element in the map
+    /// @param  map         java.util.Map<?, ?>
+    /// @param  keyClazz    The class of key type K
+    /// @param  valueClazz  The class of value type V
+    /// @return             java.util.Map<K, V>
     public static <K, V> Map<K, V> mapToTypedMap(final Map<?, ?> map, final Class<K> keyClazz, final Class<V> valueClazz) {
         Objects.requireNonNull(map, () -> "Map<?, ?> map is null");
         Objects.requireNonNull(keyClazz, () -> "Class<T> keyClazz");
@@ -147,15 +134,13 @@ public final class TestUtils {
         return typedMap;
     }
 
-    /**
-     * Create a set of elements of type T from
-     * a Set of wildcard-typed objects.
-     *
-     * @param   <T>         The type of element in the list
-     * @param   set         java.util.Set<?>
-     * @param   clazz       The class of type T
-     * @return              java.util.Set<T>
-     */
+    /// Create a set of elements of type T from
+    /// a Set of wildcard-typed objects.
+    ///
+    /// @param  <T>     The type of element in the list
+    /// @param  set     java.util.Set<?>
+    /// @param  clazz   The class of type T
+    /// @return         java.util.Set<T>
     public static <T> Set<T> setToTypedSet(final Set<?> set, final Class<T> clazz) {
         Objects.requireNonNull(set, () -> "Set<?> set is null");
         Objects.requireNonNull(clazz, () -> "Class<T> clazz");

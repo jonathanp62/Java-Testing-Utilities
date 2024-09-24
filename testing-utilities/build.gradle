@@ -4,10 +4,11 @@
  * This generated file contains a sample Java library project to get you started.
  * For more details on building Java & JVM projects, please refer to https://docs.gradle.org/8.10.1/userguide/building_java_projects.html in the Gradle documentation.
  *
+ * (#)build.gradle  1.0.0   09/24/2024
  * (#)build.gradle  0.2.0   09/23/2024
  * (#)build.gradle  0.1.0   09/23/2024
  *
- * @version  0.2.0
+ * @version  1.0.0
  * @since    0.1.0
  *
  * MIT License
@@ -76,7 +77,7 @@ dependencies {
 }
 
 group = 'net.jmp.util.testing.testutil'
-version = '0.2.0'
+version = '1.0.0'
 description = 'Testing-Utilities'
 
 println "The groupId is ${project.group}"

@@ -1,4 +1,5 @@
 /*
+ * (#)package-info.java 1.0.0   09/24/2024
  * (#)package-info.java 0.2.0   09/23/2024
  *
  * MIT License
@@ -24,11 +25,9 @@
  * SOFTWARE.
  */
 
-/**
- * The testing utilities package. Provide classes
- * useful for use in unit test classes.
- *
- * @version 0.2.0
- * @since   0.2.0
- */
+/// The testing utilities package. Provide classes
+/// useful for use in unit test classes.
+///
+/// @version    1.0.0
+/// @since      0.2.0
 package net.jmp.util.testing.testutil;

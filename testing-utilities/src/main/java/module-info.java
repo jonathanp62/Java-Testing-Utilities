@@ -1,4 +1,5 @@
 /*
+ * (#)module-info.java  1.0.0   09/24/2024
  * (#)module-info.java  0.2.0   09/23/2024
  *
  * MIT License
@@ -24,12 +25,10 @@
  * SOFTWARE.
  */
 
-/**
- * The testing utilities library module.
- *
- * @since   0.2.0
- */
-module testing_utilities.main {
+/// The testing utilities library module.
+///
+/// @since  0.2.0
+module testing.utilities {
     requires java.base;
 
     exports net.jmp.util.testing.testutil;
